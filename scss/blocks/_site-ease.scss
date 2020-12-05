@@ -53,3 +53,27 @@
 .ease__item-fourth::before {
   background-image: url("../img/feature-types.png");
 }
+
+@media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+      .ease__item-first::before {
+        background-image: url("../img/feature-everywhere@2x.png");
+      }
+      
+      .ease__item-second::before {
+        background-image: url("../img/feature-security@2x.png");
+      }
+      
+      .ease__item-third::before {
+        background-image: url("../img/feature-collab@2x.png");
+      }
+      
+      .ease__item-fourth::before {
+        background-image: url("../img/feature-types@2x.png");
+      }
+  }
