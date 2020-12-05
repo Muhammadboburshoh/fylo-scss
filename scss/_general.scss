@@ -25,3 +25,20 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.blue-link {
+  text-decoration: none;
+  color: $main-text-color;
+  font-weight: bold;
+  font-family: "Raleway", "Arial", sans-serif;
+  background: $main-btn-bg-color;
+  padding: 10px;
+  display: inline-block;
+  box-shadow: $main-btn-shadow;
+  border-radius: $main-btn-radus;
+}
+
+.blue-link:hover {
+  background: #7ee6e0;
+
+}
