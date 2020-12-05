@@ -1,4 +1,55 @@
 .ease {
   background-color: #181F2B;
   padding-top: 90px;
+  text-align: center;
+}
+
+.ease__list {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.ease__item {
+  max-width: 350px;
+  margin-bottom: 100px;
+}
+
+.ease__item-heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 23px;
+  font-family: "Raleway" "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.ease__item-heading::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+  width: 104px;
+  height: 104px;
+}
+
+.ease__item-first::before {
+  background-image: url("../../img/feature-everywhere.png");
+}
+
+.ease__item-second::before {
+  background-image: url("../../img/feature-security.png");
+}
+
+.ease__item-third::before {
+  background-image: url("../../img/feature-collab.png");
+}
+
+.ease__item-fourth::before {
+  background-image: url("../../img/feature-types.png");
 }
