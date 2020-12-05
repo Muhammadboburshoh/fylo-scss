@@ -1,0 +1,27 @@
+.site-hero {
+  text-align: center;
+}
+
+.site-hero__heading {
+  font-family:"Open Sans", "Arial", sans-serif;
+  font-size: 40px;
+  line-height: 60px;
+  max-width: 730px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+.site-hero__heading::before {
+  content: "";
+  display: inline-block;
+  width: 520px;
+  height: 420px;
+  background-image: url("../../img/hero-illustration.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: auto;
+  margin-left: auto;
+}
