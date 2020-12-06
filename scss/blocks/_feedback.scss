@@ -8,8 +8,6 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  // position: relative;
-  // z-index: 4;
 }
 
 .feedback__item {
@@ -34,7 +32,7 @@
 
 .feedback__item-blockquote::before {
   content: "";
-  background-image: url("../../img/blockquote.svg");
+  background-image: url("../img/blockquote.svg");
   background-repeat: no-repeat;
   display: inline-block;
   width: 80px;
@@ -88,4 +86,25 @@
   font-size: 12px;
   line-height: 13px;
   margin: 0;
+}
+
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+
+    .feedback__first-img::before {
+      background-image: url("../img/satish-patel@2x.png");
+    }
+    
+    .feedback__first-second::before {
+      background-image: url("../img/bruce-mckenzie@2x.png");
+    }
+    
+    .feedback__first-thrid::before {
+      background-image: url("../img/iva-boyd@2x.png");
+    }
 }
