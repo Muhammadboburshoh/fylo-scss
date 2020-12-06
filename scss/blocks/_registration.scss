@@ -7,6 +7,8 @@
 }
 
 .registration__container {
+  padding-left: 20px;
+  padding-right: 20px;
   max-width: 865px;
   background-color: #1B2330;
   text-align: center;
@@ -36,11 +38,12 @@
 }
 
 .registration__input {
-  width:480px;
+  width: 480px;
   padding: 10px;
   border:none;
   border-radius: 24px;
   outline: none;
+  // flex-grow: 1;
 }
 
 .registration__button {
@@ -48,4 +51,53 @@
   outline: none;
   padding-right: 25px;
   padding-left: 25px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .registration__container {
+    max-width: 85%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .registration__input {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+
+  .registration__heading {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .registration__input {
+    max-width: 80%;
+  }
+
+  .registration__container {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .registration__button {
+    width: 80%;
+    display: inline-block;
+  }
+
+  .registration__container {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .registration__input, .registration__button  {
+    max-width: 100%;
+    width: 100%;
+  }
+
 }

@@ -142,6 +142,10 @@
 
 @media only screen and (max-width: 400px) {
 
+  .feedback {
+    padding-bottom: 50px;
+  }
+  
   .feedback__item {
     max-width: 90%;
   }
