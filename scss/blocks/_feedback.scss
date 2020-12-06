@@ -1,0 +1,91 @@
+.feedback {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.feedback__list {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  // position: relative;
+  // z-index: 4;
+}
+
+.feedback__item {
+  max-width: 360px;
+}
+
+.feedback__item-wrapper {
+  padding-top: 40px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  border-radius: 4px;
+  background-color: #202A3C;
+  position: relative;
+  z-index: 10;
+}
+
+.feedback__item-blockquote{
+  position: relative;
+
+}
+
+.feedback__item-blockquote::before {
+  content: "";
+  background-image: url("../../img/blockquote.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -35px;
+  z-index: 1;
+  left: -10px;
+}
+
+.feedback__item-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.feedback__autor-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.feedback__autor-wrapper::before {
+  content: "";
+  width: 25px;
+  height: 24px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 8px;
+}
+
+.feedback__first-img::before {
+  background-image: url("../img/satish-patel.png");
+}
+
+.feedback__first-second::before {
+  background-image: url("../img/bruce-mckenzie.png");
+}
+
+.feedback__first-thrid::before {
+  background-image: url("../img/iva-boyd.png");
+}
+
+.feedback__autor {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 15px; 
+}
+
+.feedback__autor-info {
+  font-size: 12px;
+  line-height: 13px;
+  margin: 0;
+}
