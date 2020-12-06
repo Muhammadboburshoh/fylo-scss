@@ -3,19 +3,130 @@
   padding-bottom: 70px;
 }
 
+.convenience__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .convenience__right-part {
   max-width: 560px;
-  margin-left: auto;
 }
 
 .convenience__right-heading {
   font-size: 40px;
   line-height: 50px;
   max-width: 500px;
-  font-family: "Raleway", "Arial", sans-serif !important;
+  font-family: "Raleway", "Arial", sans-serif;
 }
 
 .convenience__right-text {
   font-size: 16px;
   line-height: 24px;
+}
+
+.convenience__right-link {
+  text-decoration: none;
+  color: $link-color;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 22px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid $link-color;
+}
+
+.convenience__right-link::after {
+  content: "";
+  background-image: url("../img/icon-right.svg");
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+@media only screen and (max-width: 1230px) {
+  .convenience__left-img {
+    width: 550px;
+    height: 400px;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 925px) {
+  .convenience__left-img {
+    width: 450px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .convenience__right-heading {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .convenience__right-text {
+    line-height: 22px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .convenience__left-img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .convenience__right-heading {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  .convenience__container {
+    flex-direction: column;
+  }
+
+  .convenience__left-img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .convenience__right-heading {
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .convenience__right-part {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .convenience__right-part {
+    max-width: 80%;
+  }
+
+  .convenience__right-heading {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .convenience__right-text {
+    line-height: 20px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .convenience__right-part {
+    max-width: 90%;
+  }
 }
