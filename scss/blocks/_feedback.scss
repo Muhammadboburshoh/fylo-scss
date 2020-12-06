@@ -12,6 +12,11 @@
 
 .feedback__item {
   max-width: 360px;
+  margin-right: 15px;
+}
+
+.feedback__item:last-child {
+  margin-right: 0;
 }
 
 .feedback__item-wrapper {
@@ -55,12 +60,15 @@
 
 .feedback__autor-wrapper::before {
   content: "";
-  width: 25px;
+  width: 24px;
   height: 24px;
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center center;
   margin-right: 8px;
+  border-radius: 50%;
+  background-size: contain;
+
 }
 
 .feedback__first-img::before {
@@ -107,4 +115,35 @@
     .feedback__first-thrid::before {
       background-image: url("../img/iva-boyd@2x.png");
     }
+}
+
+@media only screen and (max-width: 1129px) {
+
+  .feedback__list {
+    justify-content: space-around; 
+  }
+
+  .feedback__item {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 754px) {
+
+  .feedback__list {
+    justify-content: space-around; 
+  }
+
+  .feedback__item {
+    margin-right: 0;
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+
+  .feedback__item {
+    max-width: 90%;
+  }
 }
