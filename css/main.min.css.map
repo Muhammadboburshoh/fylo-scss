@@ -14,7 +14,8 @@
         "../scss/blocks/_site-header.scss",
         "../scss/blocks/_site-hero.scss",
         "../scss/blocks/_site-ease.scss",
-        "../scss/blocks/_convenience.scss"
+        "../scss/blocks/_convenience.scss",
+        "../scss/blocks/_feedback.scss"
     ],
     "names": [],
     "file": "main.min.css"
