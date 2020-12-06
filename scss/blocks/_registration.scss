@@ -1,0 +1,51 @@
+.registration {
+  background: linear-gradient(to bottom,
+  #181F2B 50%,
+  #0B1524 50%);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.registration__container {
+  max-width: 865px;
+  background-color: #1B2330;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.registration__heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 32px;
+  line-height: 48px;
+  font-family: "Raleway", "Arial", sans-serif;
+}
+
+.registration__text {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 0;
+  margin-bottom: 38px;
+  max-width: 670px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.registration__input {
+  width:480px;
+  padding: 10px;
+  border:none;
+  border-radius: 24px;
+  outline: none;
+}
+
+.registration__button {
+  border: none;
+  outline: none;
+  padding-right: 25px;
+  padding-left: 25px;
+}
