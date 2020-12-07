@@ -52,5 +52,36 @@
 }
 
 .footer__menu-list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 150px;
+}
 
+.footer__menu-item {
+  margin-right: 80px;
+  // padding-top: 6px;
+  // padding-bottom: 6px;
+  margin-bottom: 16px;
+}
+
+.footer__menu-item:nth-child(4n) {
+  margin-bottom: 0;
+}
+.footer__menu-link {
+  text-decoration: none;
+  color: $main-text-color;
+}
+
+.footer_network-list {
+  @include reset-list;
+  display: flex;
+
+}
+
+.footer_network-link {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 8px;
 }
