@@ -73,7 +73,7 @@
 
 .footer__menu-item {
   margin-right: 80px;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
 }
 
 .footer__menu-item:nth-child(4n) {
@@ -82,6 +82,13 @@
 .footer__menu-link {
   text-decoration: none;
   color: $main-text-color;
+  padding-bottom: 3px;
+  display: inline-block;
+  transition: box-shadow 0.3s ease;
+}
+
+.footer__menu-link:hover {
+  box-shadow: 0 2px #fff;
 }
 
 .footer_network-list {
