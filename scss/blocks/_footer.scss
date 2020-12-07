@@ -16,6 +16,18 @@
 
 .footer__address {
   max-width: 340px;
+  display: flex;
+}
+
+.footer__address::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 18px;
+  background-image: url("../img/place.svg");
+  margin-right: 25px;
+  background-size: 13px 18px;
+  background-repeat: no-repeat;
 }
 
 .footer__social-networks{
@@ -61,8 +73,6 @@
 
 .footer__menu-item {
   margin-right: 80px;
-  // padding-top: 6px;
-  // padding-bottom: 6px;
   margin-bottom: 16px;
 }
 
